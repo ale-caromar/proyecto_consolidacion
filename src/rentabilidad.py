@@ -4,7 +4,7 @@ def calcular_rentabilidad(df: pd.DataFrame) -> pd.DataFrame:
     """
     Calcula métricas de rentabilidad a partir de columnas existentes.
     Asume que 'ventas' es el total de venta y 'utilidad' ya está incluida.
-    """
+    """ 
     df = df.copy()
     
     # Asegurarse de que ventas y utilidad sean numéricas
@@ -18,7 +18,13 @@ def calcular_rentabilidad(df: pd.DataFrame) -> pd.DataFrame:
     df['total_venta'] = df['ventas']
     df['total_costo'] = df['total_venta'] - df['utilidad']
     
-    return df
+    return df # Redondear columnas para presentación
+    resumen = resumen.round({
+        'total_venta': 2,
+        'total_costo': 2,
+        'utilidad': 2,
+        'margen': 4
+    })
 
 
 def resumen_rentabilidad(df: pd.DataFrame) -> pd.DataFrame:
@@ -36,5 +42,13 @@ def resumen_rentabilidad(df: pd.DataFrame) -> pd.DataFrame:
         'utilidad': 'sum',
         'margen': 'mean'
     }).reset_index()
+    
+     # Redondear columnas para presentación
+    resumen = resumen.round({
+        'total_venta': 2,
+        'total_costo': 2,
+        'utilidad': 2,
+        'margen': 4
+    })
     
     return resumen
