@@ -16,16 +16,10 @@ def calcular_rentabilidad(df: pd.DataFrame) -> pd.DataFrame:
     
     # Renombrar columnas para mantener consistencia
     df['total_venta'] = df['ventas']
-    df['total_costo'] = df['total_venta'] - df['utilidad']
-    
-    return df # Redondear columnas para presentación
-    resumen = resumen.round({
-        'total_venta': 2,
-        'total_costo': 2,
-        'utilidad': 2,
-        'margen': 4
-    })
+    df['total_costo'] = df['total_venta'] - df['utilidad']        
 
+    return df 
+   
 
 def resumen_rentabilidad(df: pd.DataFrame) -> pd.DataFrame:
     """
