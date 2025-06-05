@@ -46,3 +46,5 @@ def resumen_rentabilidad(df: pd.DataFrame) -> pd.DataFrame:
     })
     
     return resumen
+
+
