@@ -1,0 +1,31 @@
+# Entorno virtual
+venv/
+ENV/
+env/
+.venv/
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Archivos de Jupyter temporales y checkpoints
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+*.nb.html
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de log y temporales
+*.log
+*.tmp
+*.swp
+
+# Configuración de VSCode
+.vscode/
+
+# Archivos de bases de datos o grandes si decides ignorarlos
+# data/*.csv
+# data/*.xlsx
