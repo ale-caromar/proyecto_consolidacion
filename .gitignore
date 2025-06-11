@@ -26,6 +26,9 @@ Thumbs.db
 # Configuración de VSCode
 .vscode/
 
-# Archivos de bases de datos o grandes si decides ignorarlos
+# Archivos de bases de datos grandes en caso de no poder subirlos
 # data/*.csv
 # data/*.xlsx
+
+# Archivo tienda virtual (muy grande)
+data/Tienda_Virtual_del_Estado_Colombiano_-_Consolidado_20250611.csv
