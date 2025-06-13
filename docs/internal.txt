@@ -30,3 +30,7 @@ Modularización clara en src/:
     data/processed/: datos limpios o listos.
     data/outputs/: resultados exportados.
 tests/: preparado para agregar pruebas en el futuro.
+
+
+
+Se realiza texto de prueba para hacer commit
