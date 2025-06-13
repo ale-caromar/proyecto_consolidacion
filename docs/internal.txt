@@ -1,0 +1,32 @@
+Modularización clara en src/:
+
+     data_loading.py: para cargar y limpiar datos.
+     Objetivo: Validaciones basicas para preparar el dataset base
+        (Agrupa fechas, valores nulos, duplicados, tipos inconsistentes)
+          
+    exploracion.py: para análisis exploratorio.
+        Objetivo: Conocer la composición del dataset, detectar patrones y outliers.
+
+          Productos más vendidos (conteo)
+          Clientes frecuentes
+          Segmentos de cliente
+          Distribución de ventas por país, ciudad, estado
+          Evolución de ventas en el tiempo
+          Análisis por canal de venta
+                                                    
+          
+          #rentabilidad.py: para análisis económico
+
+          logistica.py: para métricas de entrega.
+
+    visualizaciones.py: para gráficos.
+
+    exportacion.py: para guardar o exportar reportes.
+
+    automatizacion_correo.py: para envío de correos automáticos.
+
+    *Separación de datos:*
+    data/raw/: datos originales.
+    data/processed/: datos limpios o listos.
+    data/outputs/: resultados exportados.
+tests/: preparado para agregar pruebas en el futuro.
