@@ -63,8 +63,7 @@ def convertir_fechas(df: pd.DataFrame) -> pd.DataFrame:
             errors='coerce'
         )
     return df
-""" 
-parte del codigo se hara por David NO TOCAR!!! XD"""
+
 
 def guardar_procesado(df: pd.DataFrame, nombre_archivo: str) -> None:
     """
