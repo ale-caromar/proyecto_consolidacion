@@ -16,8 +16,7 @@ def calcular_rentabilidad(df: pd.DataFrame) -> pd.DataFrame:
     
     # Renombrar columnas para mantener consistencia
     df['total_venta'] = df['ventas']
-    df['total_costo'] = df['total_venta'] - df['utilidad']
-        
+    df['total_costo'] = df['total_venta'] - df['utilidad']        
 
     return df 
    
