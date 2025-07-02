@@ -46,4 +46,21 @@ def convertir_fechas(df: pd.DataFrame) -> pd.DataFrame:
         )
     return df
 
+import pandas as pd
+
+def limpiar_metodo_envio(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Limpia la columna 'metodo_envio' eliminando espacios iniciales/finales
+    y reemplazando múltiples espacios internos por uno solo.
+    
+       """
+    if 'metodo_envio' in df.columns:
+        df['metodo_envio'] = (
+            df['metodo_envio']
+            .astype(str)  # Por si hay NaN o números
+            .str.strip()
+            .str.replace(r'\s+', ' ', regex=True)
+        )
+    return df
+
 
